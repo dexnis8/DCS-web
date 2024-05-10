@@ -2,10 +2,9 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
-// import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
-// import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
+import { TextPlugin } from "gsap/TextPlugin";
 
-// gsap.registerPlugin(ScrambleTextPlugin);
+gsap.registerPlugin(TextPlugin);
 export const About = () => {
   const about = useRef();
   const tl = useRef();
@@ -33,6 +32,7 @@ export const About = () => {
             clipPath: "polygon(0 0, 0 0, 61% 45%, 0% 100%)",
             // rotationX: 0,
             // rotateZ: 360,
+            backgroundColor: "#015182",
             duration: 3,
           },
           {
@@ -40,6 +40,7 @@ export const About = () => {
             // x: 0,
             // rotationX: 180,
             // rotation: 360,
+            backgroundColor: "#EE4691",
             duration: 3, // Adjust duration as needed
           }
         )

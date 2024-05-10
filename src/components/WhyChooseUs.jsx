@@ -94,7 +94,9 @@ export const WhyChooseUs = () => {
               <img src="" alt="" />
             </span>
             <div className="flex flex-col card-txt gap-3 items-center justify-center">
-              <h3 className="font-semibold text-2xl text-primary-800 mt-2">Project Based</h3>
+              <h3 className="font-semibold text-2xl text-primary-800 mt-2">
+                Project Based
+              </h3>
               <p className="text-grey-600">
                 We believe in learning by doing. Our classes emphasize hands-on
                 coding exercises and projects from day one, allowing you to
@@ -111,7 +113,9 @@ export const WhyChooseUs = () => {
               <img src="" alt="" />
             </span>
             <div className="flex flex-col card-txt gap-3 items-center justify-center">
-              <h3 className="font-semibold text-2xl text-red-300 mt-2">One-on-one</h3>
+              <h3 className="font-semibold text-2xl text-red-300 mt-2">
+                One-on-one
+              </h3>
               <p className="text-grey-600">
                 Our instructor-to-student ratio is 1:1. We offer personalized
                 guidance, helping you overcome challenges and achieve your
