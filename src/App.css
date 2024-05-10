@@ -30,9 +30,10 @@ body {
   right: 0;
   border-radius: 0;
   padding: 0.5rem 1rem;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
+  mix-blend-mode: multiply;
 }
-nav {
+/* nav {
   display: flex;
   align-items: center;
   height: 100%;
@@ -53,7 +54,7 @@ nav li a {
   font-size: 18px;
   display: block;
   font-weight: normal;
-}
+} */
 
 .panel {
   height: 100vh;

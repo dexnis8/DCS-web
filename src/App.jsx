@@ -15,28 +15,27 @@ function App() {
             index
             element={
               <TransitionComponent>
-                {/* <Boxes /> */}
                 <HomePage />
               </TransitionComponent>
             }
           />
-          <Route
+          {/* <Route
             path="/scroll"
             element={
               <TransitionComponent>
-                {/* <Scroll /> */}
+               
                 <h1>Scroll</h1>
               </TransitionComponent>
             }
-          />
-          <Route
+          /> */}
+          {/* <Route
             path="/layers"
             element={
               <TransitionComponent>
-                {/* <Layers /> */}
+              
                 <h1>Layer</h1>
               </TransitionComponent>
-            }
+            } */}
           />
         </Routes>
       </TransitionProvider>

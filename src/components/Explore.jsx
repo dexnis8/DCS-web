@@ -17,7 +17,7 @@ export const Explore = () => {
           </p>
         </div>
         {/* Programs */}
-        <div className="flex flex-col gap-10">
+        {/* <div className="flex flex-col gap-10">
           {[1, 2, 3].map((program) => (
             <>
               <div key={program} className="grid grid-cols-9 ">
@@ -26,7 +26,7 @@ export const Explore = () => {
               </div>
             </>
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );
