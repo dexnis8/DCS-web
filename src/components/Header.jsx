@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 
 export default function Header() {
@@ -8,7 +9,7 @@ export default function Header() {
         <h1 className="font-bold text-3xl text-primary-800 ">DSC</h1>
       </a>
       <nav className="flex items-center gap-10">
-        <ul className="flex text-lg gap-10 items-center">
+        {/* <ul className="flex text-lg gap-10 items-center">
           <li>
             <Link to="/" className="text-primary-800">
               About Us{" "}
@@ -29,8 +30,8 @@ export default function Header() {
               FAQ
             </Link>
           </li>
-        </ul>
-        <button className="border py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
+        </ul> */}
+        <button className="border mix-blend-difference py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
           Join Us Now
         </button>
       </nav>

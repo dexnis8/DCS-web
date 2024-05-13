@@ -3,10 +3,66 @@
 import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
 import gsap from "gsap";
-
 export const Courses = () => {
   const courses = useRef();
   const tl = useRef();
+
+  const coursesArr = [
+    {
+      id: 1,
+      title: "Front End Development",
+      duration: "3 months",
+      price: 150,
+    },
+    {
+      id: 2,
+      title: "Front End Development",
+      duration: "6 months",
+      price: 250,
+    },
+    {
+      id: 3,
+      title: "Back End Development",
+      duration: "6 months",
+      price: 250,
+    },
+    {
+      id: 4,
+      title: "Full Stack Development",
+      duration: "1 year",
+      price: 450,
+    },
+    {
+      id: 5,
+      title: " App Development",
+      duration: "6 months",
+      price: 250,
+    },
+    {
+      id: 6,
+      title: "Data Analyst",
+      duration: "3 months",
+      price: 150,
+    },
+    {
+      id: 7,
+      title: "Data Science",
+      duration: "6 months",
+      price: 250,
+    },
+    {
+      id: 8,
+      title: "Cyber Security",
+      duration: "6 months",
+      price: 250,
+    },
+    {
+      id: 9,
+      title: "Product Design(UI/UX)",
+      duration: "3 months",
+      price: 150,
+    },
+  ];
 
   useGSAP(
     () => {
@@ -61,7 +117,7 @@ export const Courses = () => {
           ".card-6,.card-7,.card-8, .card-9",
           {
             // opacity: 0,
-            transform: "translateY(-109%)",
+            transform: "translateY(-118%)",
             // rotation: 0,
             duration: 3,
           },
@@ -128,25 +184,25 @@ export const Courses = () => {
         </div>
 
         <div className="grid grid-cols-5 gap-5">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((items, idx) => (
+          {coursesArr?.map((item, idx) => (
             <div
-              key={idx}
+              key={item.id}
               className={`bg-white overflow-hidden relative rounded-lg p-4 text-left group card-${
                 idx + 1
               }`}
             >
               <h3 className="text-black text-base font-semibold mb-3">
-                Full-stack Development
+                {item.title}
               </h3>
               <div className="h-[100px] mb-3 border overflow-hidden w-full">
                 <img src="/img-1.jpg" alt="img" className="w-full h-full" />
               </div>
               <div className="flex items-center gap-3 mb-2">
                 <span className="py-1 px-3 text-sm font-semibold bg-primary-200">
-                  3 months
+                  {item.duration}
                 </span>
                 <span className="py-1 px-3 text-sm font-semibold text-white bg-primary-500">
-                  ₦ 500k
+                  ₦ {item.price}k
                 </span>
               </div>
               <div className="flex  items-center gap-3">
