@@ -8,6 +8,7 @@ gsap.registerPlugin(TextPlugin);
 export const About = () => {
   const about = useRef();
   const tl = useRef();
+  
   useGSAP(
     () => {
       tl.current = gsap
@@ -80,6 +81,7 @@ export const About = () => {
     },
     { scope: about }
   );
+
   return (
     <>
       <div

@@ -9,6 +9,8 @@ import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { WhyChooseUs } from "../components/WhyChooseUs";
 import { Explore } from "../components/Explore";
+import { Courses } from "../components/Courses";
+import Testimonial from "../components/Testimonial";
 
 export default function HomePage() {
   const main = useRef();
@@ -83,7 +85,13 @@ export default function HomePage() {
       <section className="panel bg-primary-200 inner-el scrollbar-hidden">
         <Explore />
       </section>
-      <section className="panel bg-[#80e8ff]">FOUR</section>
+      <section className="panel bg-primary-200">
+        <Courses />
+      </section>
+      <section className="panel bg-white">
+        <Testimonial />
+      </section>
+      <section className="panel bg-[#80e8ff]">Faq</section>
     </main>
   );
 }
