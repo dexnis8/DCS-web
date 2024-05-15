@@ -13,12 +13,15 @@ import { Courses } from "../components/Courses";
 import Testimonial from "../components/Testimonial";
 import FAQs from "../components/FAQ";
 import { Footer } from "../components/Footer";
+import { useMediaQuery } from "@mui/material";
 
 export default function HomePage() {
   const main = useRef();
   const { completed } = useContext(TransitionContext);
   const scrollTween = useRef();
   const snapTriggers = useRef([]);
+  const match = useMediaQuery("(max-width:640px)");
+  console.log(match);
   const { contextSafe } = useGSAP(
     () => {
       if (!completed) return;
@@ -79,19 +82,19 @@ export default function HomePage() {
         <Hero />
       </section>
       <section className="panel bg-primary-200">
-        <About />
+        <About match={match} />
       </section>
       <section className="panel bg-white ">
-        <WhyChooseUs />
+        <WhyChooseUs match={match} />
       </section>
       <section className="panel bg-primary-200 inner-el scrollbar-hidden">
-        <Explore />
+        <Explore match={match} />
       </section>
       <section className="panel bg-primary-200">
-        <Courses />
+        <Courses match={match} />
       </section>
       <section className="panel bg-white">
-        <Testimonial />
+        <Testimonial match={match} />
       </section>
       <section className="panel bg-white">
         <FAQs />

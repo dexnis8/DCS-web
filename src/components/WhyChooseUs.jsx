@@ -77,7 +77,7 @@ export const WhyChooseUs = () => {
 
   return (
     <>
-      <div className="container px-10 pt-10 why" ref={why}>
+      <div className="container px-3 md:px-10 pt-10 why" ref={why}>
         <div className=" why-head text-center">
           <h2 className=" text-4xl mb-2 sm:text-[48px] font-bold text-primary-800">
             Why Choose Us{" "}
@@ -88,7 +88,7 @@ export const WhyChooseUs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-5 mt-10">
+        <div className=" md:grid grid-cols-3 gap-5 mt-10">
           <div className=" overflow-hidden flex pl-2 flex-col gap-3 items-center justify-center">
             <span className="why-box h-[100px] w-[100px] bg-primary-800 rounded-lg border ">
               <img src="" alt="" />

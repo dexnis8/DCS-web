@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
 import gsap from "gsap";
 
-export const Explore = () => {
+export const Explore = ({ match }) => {
   const explore = useRef();
   const tl = useRef();
 
@@ -38,7 +39,15 @@ export const Explore = () => {
             opacity: 1,
             transform: "translateX(0%)",
             rotation: 360,
-            duration: 3, // Adjust duration as needed
+            duration: 3,
+            scrollTrigger: {
+              trigger: ".card-1",
+              start: "top 70%",
+              end: "bottom bottom",
+              scrub: 3,
+              toggleActions: "restart none none none",
+              // markers: true,
+            },
           }
         )
         .fromTo(
@@ -53,7 +62,15 @@ export const Explore = () => {
             opacity: 1,
             transform: "translateY(0%)",
             rotation: 360,
-            duration: 3, // Adjust duration as needed
+            duration: 3,
+            scrollTrigger: {
+              trigger: ".card-2",
+              start: "top 70%",
+              end: "bottom bottom",
+              scrub: 3,
+              toggleActions: "restart none none none",
+              // markers: true,
+            },
           },
           "-=3"
         )
@@ -69,7 +86,15 @@ export const Explore = () => {
             opacity: 1,
             transform: "translateX(0%)",
             rotation: 360,
-            duration: 3, // Adjust duration as needed
+            duration: 3,
+            scrollTrigger: {
+              trigger: ".card-3",
+              start: "top 70%",
+              end: "bottom bottom",
+              scrub: 3,
+              toggleActions: "restart none none none",
+              // markers: true,
+            },
           },
           "-=3"
         )
@@ -100,7 +125,7 @@ export const Explore = () => {
   );
   return (
     <>
-      <div className="container px-10 pf-20" ref={explore}>
+      <div className="container px-3 sm:px-10 pt-20 sm:pt-0" ref={explore}>
         <div className=" text-center explore-head ">
           <h2 className=" text-4xl mb-2 sm:text-[48px] font-bold text-primary-800">
             Explore Our Programs
@@ -111,7 +136,7 @@ export const Explore = () => {
           </p>
         </div>
         {/* Programs */}
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid lg:grid-cols-3 gap-5">
           {/* Regular */}
           <div className="card-1 relative h-[350px] rounded-lg overflow-hidden group">
             <img

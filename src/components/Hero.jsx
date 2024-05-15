@@ -59,7 +59,7 @@ export const Hero = () => {
   return (
     <>
       <div
-        className="container px-10 border grid grid-cols-2 items-center h-full"
+        className="container px-3 md:px-10  flex flex-col justify-center mt-[100px] lg:mt-0 lg:grid grid-cols-2 items-center h-full"
         ref={cont}
       >
         <div className="text-left hero-text">
@@ -67,26 +67,26 @@ export const Hero = () => {
             <strong className="text-base text-primary-500">New:</strong>{" "}
             Weekends and Holidays for JSS1-SS3
           </p>
-          <h1 className="text-primary-800 font-bold text-[64px] leading-tight ">
+          <h1 className="text-primary-800 font-bold text-[40px] md:text-[64px] leading-tight ">
             Learn Coding And Become a Pro
           </h1>
-          <p className="text-2xl mt-2 w-3/4 text-grey-600">
+          <p className="text-xl sm:text-2xl mt-2  sm:w-3/4 text-grey-600">
             Our expert-led project based curricullum is designed to take you
             from a newbie to pro
           </p>
           <div className="flex gap-3 mt-5">
-            <button className="border py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
+            <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-700 text-white">
               Join Us Now
             </button>
-            <button className="border py-3 px-5 rounded-lg shadow bg-primary-200 text-">
+            <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-200 text-">
               Download Our Brochure
             </button>
           </div>
         </div>
         <div>
-          <code className="text-[300px] hero-img  text-[#016798]">{`</>`}</code>
+          <code className="text-[250px] hidden sm:block md:text-[300px] hero-img  text-[#016798]">{`</>`}</code>
           {/* <code className="text-[200px]  text-">{`<></>`}</code> */}
-          <div className="scroll-down">
+          <div className="hidden sm:scroll-down">
             <div className="arrow animate-bounce"></div>
           </div>
         </div>

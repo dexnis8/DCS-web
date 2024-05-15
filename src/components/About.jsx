@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { TextPlugin } from "gsap/TextPlugin";
+import { useMediaQuery } from "@mui/material";
 
 gsap.registerPlugin(TextPlugin);
-export const About = () => {
+export const About = ({ match }) => {
   const about = useRef();
   const tl = useRef();
-  
+
   useGSAP(
     () => {
       tl.current = gsap
@@ -19,7 +21,9 @@ export const About = () => {
           },
           scrollTrigger: {
             trigger: about.current,
-            start: "top 70%",
+            // start: "top 70%", // for desktop
+            start: "top 10%",
+            // end: "bottom center",
             end: "bottom bottom",
             scrub: 2,
             toggleActions: "restart none none none",
@@ -38,13 +42,31 @@ export const About = () => {
           },
           {
             clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)",
-            // x: 0,
-            // rotationX: 180,
-            // rotation: 360,
+            backgroundColor: "#EE4691",
+            duration: 3,
+          }
+        )
+        .fromTo(
+          ".about-img-s",
+          {
+            clipPath: "polygon(0 0, 100% 0, 100% 0, 0 100%)",
+            backgroundColor: "#015182",
+            duration: 3,
+            scrollTrigger: {
+              trigger: ".about-img-sm", // Use the wrapper container as the trigger
+              start: "top top%",
+              end: "bottom bottom",
+              scrub: 2,
+              toggleActions: "restart none none none",
+            },
+          },
+          {
+            clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             backgroundColor: "#EE4691",
             duration: 3, // Adjust duration as needed
           }
         )
+
         .fromTo(
           ".abt-header",
           {
@@ -62,7 +84,41 @@ export const About = () => {
           "-=2"
         )
         .fromTo(
+          ".abt-header-s",
+          {
+            x: -100,
+            y: -80,
+            opacity: 0,
+            fontSize: "48px",
+            duration: 1,
+          },
+          {
+            x: 0,
+            y: 0,
+            fontSize: "36px",
+            duration: 1,
+            opacity: 1,
+          },
+          "-=2"
+        )
+        .fromTo(
           ".abt-p",
+          {
+            x: -100,
+            opacity: 0.5,
+            // y: -80,
+            // fontSize: "48px",
+            // duration: 2,
+          },
+          {
+            x: 0,
+            opacity: 1,
+            duration: 2, // Adjust duration as needed
+          },
+          "-=2"
+        )
+        .fromTo(
+          ".abt-p-s",
           {
             x: -100,
             opacity: 0.5,
@@ -85,15 +141,27 @@ export const About = () => {
   return (
     <>
       <div
-        className="container about grid grid-cols-2 pt-10 px-10 gap-10  items-center "
+        className="container about flex flex-col md:grid grid-cols-2 pt-10 px-3 sm:px-10 gap-10  items-center "
         ref={about}
       >
-        <div className="about-img rounded-lg h-[500px] bg-red-300">Image</div>
+        <div
+          className={`${
+            match ? "about-img-sm" : "about-img"
+          } w-full rounded-lg h-[500px] bg-red-300`}
+        >
+          Image
+        </div>
         <div className="about-txt  text-left flex flex-col gap-10">
-          <h1 className="text-4xl sm:text-[48px] font-bold abt-header text-primary-800">
+          <h1
+            className={`text-4xl sm:text-[48px] font-bold ${
+              match ? "abt-header-sm " : "abt-header"
+            } text-primary-800`}
+          >
             About Us
           </h1>
-          <p className="text-xl text-grey-600 abt-p">
+          <p
+            className={`text-xl text-grey-600 ${match ? "abt-p-sm" : "abt-p"}`}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             commodi consequuntur nam recusandae expedita cupiditate tenetur,
             voluptas incidunt quidem eligendi debitis sed excepturi vel

@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
 import React, { useRef } from "react";
 import gsap from "gsap";
-export const Courses = () => {
+export const Courses = ({ match }) => {
   const courses = useRef();
   const tl = useRef();
 
@@ -81,7 +82,22 @@ export const Courses = () => {
             // markers: true,
           },
         })
-
+        .fromTo(
+          ".card-0",
+          { x: -300, rotation: 0 },
+          {
+            x: 0,
+            rotation: 360,
+            scrollTrigger: {
+              trigger: ".card-0",
+              start: "top 70%",
+              end: "bottom bottom",
+              scrub: 3,
+              toggleActions: "restart none none none",
+              // markers: true,
+            },
+          }
+        )
         .fromTo(
           ".card-1,.card-4",
           {
@@ -170,9 +186,10 @@ export const Courses = () => {
     },
     { scope: courses }
   );
+
   return (
     <>
-      <div className="container px-10 pt-7" ref={courses}>
+      <div className="container px-3 sm:px-10 pt-7" ref={courses}>
         <div className=" text-center explore-head ">
           <h2 className=" text-4xl mb-5  font-bold text-primary-800">
             Available Courses
@@ -183,13 +200,13 @@ export const Courses = () => {
           </p> */}
         </div>
 
-        <div className="grid grid-cols-5 gap-5">
+        <div className=" flex flex-col sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
           {coursesArr?.map((item, idx) => (
             <div
               key={item.id}
               className={`bg-white overflow-hidden relative rounded-lg p-4 text-left group card-${
-                idx + 1
-              }`}
+                match ? "0" : idx + 1
+              } `}
             >
               <h3 className="text-black text-base font-semibold mb-3">
                 {item.title}

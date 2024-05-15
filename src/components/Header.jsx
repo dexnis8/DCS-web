@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <header className="header   px-10">
+    <header className="header bg-white shadow sm:bg-transparent sm:shadow-none px-3  sm:px-10">
       <a className="" href="https://gsap.com" target="_blank" rel="noreferrer">
         {/* <img className="my-2" src="/logo.webp" width="100" height="100" /> */}
         <h1 className="font-bold text-3xl text-primary-800 ">DSC</h1>

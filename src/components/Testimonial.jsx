@@ -10,7 +10,7 @@ const Testimonial = () => {
     <div className=" flex h-[70%] w-full flex-col lg:grid lg:grid-cols-5 lg:w-[1200px] bg-white shadow-md overflow-hidden rounded-lg mx-auto">
       <div className="col-span-2 font-bold p-5 lg:p-0 bg-primary-800 flex justify-center items-center  h-[80%] rounded-br-[50px] ">
         <h1 className="relative lg:w-[250px] text-2xl text-center sm:text-left sm:text-3xl  md:text-5xl text-white ">
-          <span className="-top-3 -left-10 h-[40px] w-[40px] flex justify-center items-center text-primary-800  rounded-full pt-5 rotate-180 absolute bg-slate-200">
+          <span className="-top-3 -left-10 h-[40px] w-[40px] hidden sm:flex justify-center items-center text-primary-800  rounded-full pt-5 rotate-180 absolute bg-slate-200">
             "
           </span>
           What Our students are saying
