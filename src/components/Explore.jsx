@@ -140,7 +140,7 @@ export const Explore = ({ match }) => {
           {/* Regular */}
           <div className="card-1 relative h-[350px] rounded-lg overflow-hidden group">
             <img
-              src="/img-1.jpg"
+              src="/regular.jpg"
               alt="Cover"
               className="w-full h-full object-cover"
             />
@@ -160,7 +160,7 @@ export const Explore = ({ match }) => {
           {/* Weekends and holidays */}
           <div className="card-2 relative h-[350px] rounded-lg overflow-hidden group">
             <img
-              src="/img-2.jpg"
+              src="/weekend.jpg"
               alt="Cover"
               className="w-full h-full object-cover"
             />
@@ -180,7 +180,7 @@ export const Explore = ({ match }) => {
           {/* Summer */}
           <div className="card-3 relative h-[350px] rounded-lg overflow-hidden group">
             <img
-              src="/img-3.jpg"
+              src="/summer.jpg"
               alt="Cover"
               className="w-full h-full object-cover"
             />

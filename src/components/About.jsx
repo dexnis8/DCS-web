@@ -147,9 +147,9 @@ export const About = ({ match }) => {
         <div
           className={`${
             match ? "about-img-sm" : "about-img"
-          } w-full rounded-lg h-[500px] bg-red-300`}
+          } w-full rounded-lg h[500px] bg-red-300`}
         >
-          Image
+          <img src="./about.jpg" alt="about us" className="h-" />
         </div>
         <div className="about-txt  text-left flex flex-col gap-10">
           <h1
