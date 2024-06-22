@@ -146,14 +146,14 @@ export const About = ({ match }) => {
       >
         <div
           className={`${
-            match ? "about-img-sm" : "about-img"
-          } w-full rounded-lg h[500px] bg-red-300 pt-5 relative`}
+            match ? "no-animation" : "about-img"
+          } w-full rounded-lg h[500px] bg-primary-800 sm:bg-red-300 pt-5 relative`}
           // className={`about-img w-full rounded-lg h[600px] bg-red-300`}
         >
           <img src="/about.jpg" alt="about us" className="" />
           {/* <div className="absolute w-full inset-0 h-[500px] bg-red-300 translate-z-10 left-[-300px]"></div> */}
         </div>
-        <div className="about-txt  text-left flex flex-col gap-10">
+        <div className="about-txt text-center sm:text-left flex flex-col gap-10">
           <h1
             className={`text-4xl sm:text-[48px] font-bold ${
               match ? "abt-header-sm " : "abt-header"
@@ -162,7 +162,9 @@ export const About = ({ match }) => {
             About Us
           </h1>
           <p
-            className={`text-xl text-grey-600 ${match ? "abt-p-sm" : "abt-p"}`}
+            className={`text-xl text-grey-600 ${
+              match ? "no-animation" : "abt-p"
+            }`}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
             commodi consequuntur nam recusandae expedita cupiditate tenetur,

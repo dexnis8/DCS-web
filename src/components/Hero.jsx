@@ -62,8 +62,8 @@ export const Hero = () => {
         className="container px-3 md:px-10  flex flex-col justify-center mt-[100px] lg:mt-0 lg:grid grid-cols-2 items-center h-full"
         ref={cont}
       >
-        <div className="text-left hero-text">
-          <p className="p-2 bg-primary-200 w-fit rounded-lg text-sm">
+        <div className="text-center sm:text-left hero-text">
+          <p className="p-2 bg-primary-200 w-fit rounded-lg text-sm sm:mx-0 mx-auto">
             <strong className="text-base text-primary-500">New:</strong>{" "}
             Weekends and Holidays for JSS1-SS3
           </p>
@@ -74,7 +74,7 @@ export const Hero = () => {
             Our expert-led project based curricullum is designed to take you
             from a newbie to pro
           </p>
-          <div className="flex gap-3 mt-5">
+          <div className="flex gap-3 mt-5 justify-center sm:justify-start">
             <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-700 text-white">
               Join Us Now
             </button>
@@ -86,7 +86,7 @@ export const Hero = () => {
         <div>
           <code className="text-[250px] hidden sm:block md:text-[300px] hero-img  text-[#016798]">{`</>`}</code>
           {/* <code className="text-[200px]  text-">{`<></>`}</code> */}
-          <div className="hidden sm:scroll-down">
+          <div className="hidden scroll-down">
             <div className="arrow animate-bounce"></div>
           </div>
         </div>

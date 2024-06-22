@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/no-unescaped-entities */
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 
-export const WhyChooseUs = () => {
+export const WhyChooseUs = ({ match }) => {
   const why = useRef();
   // const tl = useRef();
   useGSAP(
@@ -78,7 +79,7 @@ export const WhyChooseUs = () => {
   return (
     <>
       <div className="container px-3 md:px-10 pt-10 why" ref={why}>
-        <div className=" why-head text-center">
+        <div className={` ${match ? "no-animation" : "why-head"} text-center`}>
           <h2 className=" text-4xl mb-2 sm:text-[48px] font-bold text-primary-800">
             Why Choose Us{" "}
           </h2>
@@ -90,10 +91,18 @@ export const WhyChooseUs = () => {
 
         <div className=" md:grid grid-cols-3 gap-5 mt-10">
           <div className=" overflow-hidden flex pl-2 flex-col gap-3 items-center justify-center">
-            <span className="why-box h-[100px] w-[100px] bg-primary-800 rounded-lg border ">
+            <span
+              className={`${
+                match ? "no-animation" : "why-box"
+              } h-[100px] w-[100px] bg-primary-800 rounded-lg border `}
+            >
               <img src="" alt="" />
             </span>
-            <div className="flex flex-col card-txt gap-3 items-center justify-center">
+            <div
+              className={`flex flex-col ${
+                match ? "no-animation" : "card-txt"
+              } gap-3 items-center justify-center`}
+            >
               <h3 className="font-semibold text-2xl text-primary-800 mt-2">
                 Project Based
               </h3>
@@ -109,10 +118,18 @@ export const WhyChooseUs = () => {
           </div>
 
           <div className=" overflow-hidden flex pl-2 flex-col gap-3 items-center justify-center">
-            <span className="why-box h-[100px] bg-red-300 w-[100px] rounded-lg border ">
+            <span
+              className={`${
+                match ? "no-animation" : "why-box"
+              } h-[100px] w-[100px] bg-red-300 rounded-lg border `}
+            >
               <img src="" alt="" />
             </span>
-            <div className="flex flex-col card-txt gap-3 items-center justify-center">
+            <div
+              className={`flex flex-col ${
+                match ? "no-animation" : "card-txt"
+              } gap-3 items-center justify-center`}
+            >
               <h3 className="font-semibold text-2xl text-red-300 mt-2">
                 One-on-one
               </h3>
@@ -127,10 +144,18 @@ export const WhyChooseUs = () => {
             </div>
           </div>
           <div className=" overflow-hidden flex pl-2 flex-col gap-3 items-center justify-center">
-            <span className="why-box h-[100px] w-[100px] bg-grey-600 rounded-lg border ">
+            <span
+              className={`${
+                match ? "no-animation" : "why-box"
+              } h-[100px] w-[100px] bg-grey-600 rounded-lg border `}
+            >
               <img src="" alt="" />
             </span>
-            <div className="flex flex-col card-txt gap-3 items-center justify-center">
+            <div
+              className={`flex flex-col ${
+                match ? "no-animation" : "card-txt"
+              } gap-3 items-center justify-center`}
+            >
               <h3 className="font-semibold text-2xl text-grey-600 mt-2">
                 Industry Relevant Curriculum
               </h3>

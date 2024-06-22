@@ -11,13 +11,13 @@ export const Courses = ({ match }) => {
   const coursesArr = [
     {
       id: 1,
-      title: "Front End Development",
+      title: "Front End (Basics)",
       duration: "3 months",
       price: 150,
     },
     {
       id: 2,
-      title: "Front End Development",
+      title: "Front End (Advanced)",
       duration: "6 months",
       price: 250,
     },
@@ -190,7 +190,9 @@ export const Courses = ({ match }) => {
   return (
     <>
       <div className="container px-3 sm:px-10 pt-7" ref={courses}>
-        <div className=" text-center explore-head ">
+        <div
+          className={`text-center ${match ? "no-animation" : "explore-head"}`}
+        >
           <h2 className=" text-4xl mb-5  font-bold text-primary-800">
             Available Courses
           </h2>

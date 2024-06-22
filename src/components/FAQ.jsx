@@ -11,7 +11,6 @@ import React, { useState, useRef } from "react";
 // import "react-accessible-accordion/dist/fancy-example.css";
 import "./FaqStyles.css";
 
-
 const faqs = [
   {
     id: 1,
@@ -64,8 +63,10 @@ const AccordionItem = (props) => {
           className={`rc-accordion-toggle p-3 ${active === id ? "active" : ""}`}
           onClick={() => handleToggle(id)}
         >
-          <h5 className="rc-accordion-title">{header}</h5>
-          <i className="fa fa-chevron-down rc-accordion-icon"></i>
+          <h5 className="rc-accordion-title  text-center ">{header}</h5>
+          <i className="fa fa-chevron-down sm:block hidden rc-accordion-icon font-bold text-lg">
+            &#8595;
+          </i>
         </div>
       </div>
       <div

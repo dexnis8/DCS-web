@@ -126,7 +126,9 @@ export const Explore = ({ match }) => {
   return (
     <>
       <div className="container px-3 sm:px-10 pt-20 sm:pt-0" ref={explore}>
-        <div className=" text-center explore-head ">
+        <div
+          className={`text-center ${match ? "no-animation" : "explore-head"}`}
+        >
           <h2 className=" text-4xl mb-2 sm:text-[48px] font-bold text-primary-800">
             Explore Our Programs
           </h2>
@@ -138,7 +140,11 @@ export const Explore = ({ match }) => {
         {/* Programs */}
         <div className="grid lg:grid-cols-3 gap-5">
           {/* Regular */}
-          <div className="card-1 relative h-[350px] rounded-lg overflow-hidden group">
+          <div
+            className={`${
+              match ? "no-animation" : "card-1"
+            } relative h-[350px] rounded-lg overflow-hidden group`}
+          >
             <img
               src="/regular.jpg"
               alt="Cover"
@@ -158,7 +164,11 @@ export const Explore = ({ match }) => {
             </div>
           </div>
           {/* Weekends and holidays */}
-          <div className="card-2 relative h-[350px] rounded-lg overflow-hidden group">
+          <div
+            className={`${
+              match ? "no-animation" : "card-2"
+            } relative h-[350px] rounded-lg overflow-hidden group`}
+          >
             <img
               src="/weekend.jpg"
               alt="Cover"
@@ -178,7 +188,11 @@ export const Explore = ({ match }) => {
             </div>
           </div>
           {/* Summer */}
-          <div className="card-3 relative h-[350px] rounded-lg overflow-hidden group">
+          <div
+            className={`${
+              match ? "no-animation" : "card-3"
+            } relative h-[350px] rounded-lg overflow-hidden group`}
+          >
             <img
               src="/summer.jpg"
               alt="Cover"

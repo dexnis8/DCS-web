@@ -6,7 +6,7 @@ export default function Header() {
     <header className="header bg-white shadow sm:bg-transparent sm:shadow-none px-3  sm:px-10">
       <a className="" href="https://gsap.com" target="_blank" rel="noreferrer">
         {/* <img className="my-2" src="/logo.webp" width="100" height="100" /> */}
-        <h1 className="font-bold text-3xl text-primary-800 ">DSC</h1>
+        <h1 className="font-bold text-3xl text-primary-800 ">DCS</h1>
       </a>
       <nav className="flex items-center gap-10">
         {/* <ul className="flex text-lg gap-10 items-center">
@@ -31,7 +31,7 @@ export default function Header() {
             </Link>
           </li>
         </ul> */}
-        <button className="border mix-blend-difference py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
+        <button className="border py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
           Join Us Now
         </button>
       </nav>
