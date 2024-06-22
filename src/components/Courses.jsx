@@ -204,8 +204,11 @@ export const Courses = ({ match }) => {
           {coursesArr?.map((item, idx) => (
             <div
               key={item.id}
+              // className={`bg-white overflow-hidden relative rounded-lg p-4 text-left group card-${
+              //   match ? "0" : idx + 1
+              // } `}
               className={`bg-white overflow-hidden relative rounded-lg p-4 text-left group card-${
-                match ? "0" : idx + 1
+                match ? "no-animation" : idx + 1
               } `}
             >
               <h3 className="text-black text-base font-semibold mb-3">

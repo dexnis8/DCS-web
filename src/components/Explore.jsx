@@ -144,7 +144,7 @@ export const Explore = ({ match }) => {
               alt="Cover"
               className="w-full h-full object-cover"
             />
-            <div className="absolute px-3 inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
+            <div className="absolute px-3 inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
               <h2 className="text-white text-2xl font-bold pt-3">Regular</h2>
               <p className="text-white text-center">
                 For individuals who have completed secondary school, students
@@ -164,7 +164,7 @@ export const Explore = ({ match }) => {
               alt="Cover"
               className="w-full h-full object-cover"
             />
-            <div className="absolute px-3 inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
+            <div className="absolute px-3 inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
               <h2 className="text-white text-2xl font-bold pt-3">
                 Weekends & Holidays
               </h2>
@@ -184,7 +184,7 @@ export const Explore = ({ match }) => {
               alt="Cover"
               className="w-full h-full object-cover"
             />
-            <div className="absolute px-3 inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
+            <div className="absolute px-3 inset-0 bg-black bg-opacity-30 backdrop-blur-sm flex flex-col justify-center items-center space-y-5">
               <h2 className="text-white text-2xl font-bold pt-3">
                 Summer Coding Camp
               </h2>

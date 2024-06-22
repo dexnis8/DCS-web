@@ -22,17 +22,17 @@ export const About = ({ match }) => {
           scrollTrigger: {
             trigger: about.current,
             // start: "top 70%", // for desktop
-            start: "top 10%",
-            // end: "bottom center",
-            end: "bottom bottom",
-            scrub: 2,
+            start: "top 50%",
+            end: "top center",
+            // end: "bottom bottom",
+            scrub: 3,
             toggleActions: "restart none none none",
             // markers: true,
           },
         })
 
         .fromTo(
-          ".about-img",
+          ".about-img-s",
           {
             clipPath: "polygon(0 0, 0 0, 61% 45%, 0% 100%)",
             // rotationX: 0,
@@ -47,7 +47,7 @@ export const About = ({ match }) => {
           }
         )
         .fromTo(
-          ".about-img-s",
+          ".about-img",
           {
             clipPath: "polygon(0 0, 100% 0, 100% 0, 0 100%)",
             backgroundColor: "#015182",
@@ -118,7 +118,7 @@ export const About = ({ match }) => {
           "-=2"
         )
         .fromTo(
-          ".abt-p-s",
+          ".abt-p-sm",
           {
             x: -100,
             opacity: 0.5,
@@ -147,9 +147,11 @@ export const About = ({ match }) => {
         <div
           className={`${
             match ? "about-img-sm" : "about-img"
-          } w-full rounded-lg h[500px] bg-red-300`}
+          } w-full rounded-lg h[500px] bg-red-300 pt-5 relative`}
+          // className={`about-img w-full rounded-lg h[600px] bg-red-300`}
         >
-          <img src="./about.jpg" alt="about us" className="h-" />
+          <img src="/about.jpg" alt="about us" className="" />
+          {/* <div className="absolute w-full inset-0 h-[500px] bg-red-300 translate-z-10 left-[-300px]"></div> */}
         </div>
         <div className="about-txt  text-left flex flex-col gap-10">
           <h1
