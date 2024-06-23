@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useGSAP } from "@gsap/react";
@@ -187,20 +188,23 @@ export const About = ({ match }) => {
               match ? "no-animation" : "abt-p"
             }`}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            commodi consequuntur nam recusandae expedita cupiditate tenetur,
-            voluptas incidunt quidem eligendi debitis sed excepturi vel
-            molestias dolores? Magni autem labore et.
+            At Delux Coding School, we don't just teach code; we shape futures.
+            Our mission is to empower individuals to embark on an exciting
+            journey into programming and technology. Whether you're a beginner
+            taking your first steps or an experienced coder looking to advance
+            your skills, our dedicated team of experts is here to guide you
+            every step of the way.
             <br /> <br />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            beatae, ad officiis consequuntur porro aliquam aut consequatur
-            architecto commodi vitae illum molestiae quaerat. At officiis ipsa
-            autem! Deleniti, harum quisquam.
+            We are committed to excellence, hands-on learning, and real-world
+            projects, ensuring you acquire practical skills that are in high
+            demand in today's digital age. We believe in the transformative
+            power of technology and are here to help you unlock your full
+            potential.
           </p>
           <div>
-            <button className="border py-3 px-5 rounded-lg font-semibold shadow text-white bg-red-300 abt-btn">
+            {/* <button className="border py-3 px-5 rounded-lg font-semibold shadow text-white bg-red-300 abt-btn">
               Read More
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
