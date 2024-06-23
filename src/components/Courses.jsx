@@ -43,7 +43,7 @@ export const Courses = ({ match }) => {
       title: " App Development",
       duration: "6 months",
       price: 300,
-      imageUrl: "/fe-basic.jpg",
+      imageUrl: "/app.jpeg",
     },
     {
       id: 6,
@@ -269,7 +269,10 @@ export const Courses = ({ match }) => {
               </div>
               <div className="transition-opacity duration-500 opacity-0 group-hover:opacity-100 absolute inset-0 flex items-center justify-center bg-black/50 w-full h-full">
                 <button className="px-10 py-3 bg-red-300 hover:opacity-100 opacity-75 rounded-lg text-white font-bold">
-                  <Link to="https://wa.me/2349032565436"> Enroll Now</Link>
+                  <Link to="https://api.whatsapp.com/send?phone=2349032565436&text=My%20name%20is%20________%2C%20and%20I%20would%20like%20to%20inquire%20about%20______.">
+                    {" "}
+                    Enroll Now
+                  </Link>
                 </button>
               </div>
             </div>

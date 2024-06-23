@@ -77,10 +77,19 @@ export const Hero = () => {
           </p>
           <div className="flex gap-3 mt-5 justify-center sm:justify-start">
             <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-700 text-white">
-              <Link to="https://wa.me/2349032565436"> Join Us Now</Link>
+              <Link to="https://api.whatsapp.com/send?phone=2349032565436&text=My%20name%20is%20________%2C%20and%20I%20would%20like%20to%20inquire%20about%20______.">
+                {" "}
+                Join Us Now
+              </Link>
             </button>
             <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-200 text-">
-              Download Our Brochure
+              <Link
+                target="blank"
+                to="https://drive.google.com/file/d/1ydvqT-8seqRMPF-0dp3l5cKoI2K0PMxW/view?usp=drivesdk"
+              >
+                {" "}
+                Check Our Brochure
+              </Link>
             </button>
           </div>
         </div>

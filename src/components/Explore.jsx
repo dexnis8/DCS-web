@@ -160,7 +160,10 @@ export const Explore = ({ match }) => {
                 professionals.
               </p>
               <button className="px-10 py-2 bg-primary-800 font-semibold mt-10 text-white rounded hover:bg-primary-700 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                <Link to="https://wa.me/2349032565436"> Learn More</Link>
+                <Link to="https://api.whatsapp.com/send?phone=2349032565436&text=My%20name%20is%20________%2C%20and%20I%20would%20like%20to%20inquire%20about%20______.">
+                  {" "}
+                  Learn More
+                </Link>
               </button>
             </div>
           </div>
@@ -184,7 +187,10 @@ export const Explore = ({ match }) => {
                 Senior Secondary School (SS3)
               </p>
               <button className="px-10 py-2 bg-primary-800 font-semibold mt-10 text-white rounded hover:bg-primary-700 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                <Link to="https://wa.me/2349032565436"> Learn More</Link>
+                <Link to="https://api.whatsapp.com/send?phone=2349032565436&text=My%20name%20is%20________%2C%20and%20I%20would%20like%20to%20inquire%20about%20______.">
+                  {" "}
+                  Learn More
+                </Link>
               </button>
             </div>
           </div>
@@ -209,7 +215,10 @@ export const Explore = ({ match }) => {
                 development, and more, tailored to their age and skill level
               </p>
               <button className="px-10 py-2 bg-primary-800 font-semibold mt-10 text-white rounded hover:bg-primary-700 transition-opacity duration-500 opacity-0 group-hover:opacity-100">
-                <Link to="https://wa.me/2349032565436"> Learn More</Link>
+                <Link to="https://api.whatsapp.com/send?phone=2349032565436&text=My%20name%20is%20________%2C%20and%20I%20would%20like%20to%20inquire%20about%20______.">
+                  {" "}
+                  Learn More
+                </Link>
               </button>
             </div>
           </div>
