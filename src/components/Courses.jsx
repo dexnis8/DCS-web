@@ -15,7 +15,7 @@ export const Courses = ({ match }) => {
       title: "Front End (Basics)",
       duration: "3 months",
       price: 200,
-      imageUrl: "/fe-basic.jpg",
+      imageUrl: "/fe-basic.jpeg",
     },
     {
       id: 2,
