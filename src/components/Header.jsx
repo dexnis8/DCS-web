@@ -1,12 +1,23 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ match }) {
   return (
     <header className="header bg-white shadow sm:bg-transparent sm:shadow-none px-3  sm:px-10">
-      <a className="" href="https://gsap.com" target="_blank" rel="noreferrer">
-        {/* <img className="my-2" src="/logo.webp" width="100" height="100" /> */}
-        <h1 className="font-bold text-3xl text-primary-800 ">DCS</h1>
+      <a
+        className="sm:pt-5"
+        href="https://dcs-iota.vercel.app/"
+        // target="_blank"
+        rel="noreferrer"
+      >
+        <img
+          className="my-2"
+          src="/logo.webp"
+          width={`${match ? "60" : "100"}`}
+          height={`${match ? "60" : "100"}`}
+        />
+        {/* <h1 className="font-bold text-3xl text-primary-800 ">DCS</h1> */}
       </a>
       <nav className="flex items-center gap-10">
         {/* <ul className="flex text-lg gap-10 items-center">
@@ -32,7 +43,7 @@ export default function Header() {
           </li>
         </ul> */}
         <button className="border py-3 px-5 rounded-lg shadow bg-primary-700 text-white">
-          Join Us Now
+          <Link to="https://wa.me/2349032565436"> Join Us Now</Link>
         </button>
       </nav>
     </header>

@@ -1,5 +1,7 @@
 // import React from 'react'
 
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return (
     <>
@@ -10,7 +12,7 @@ export const Footer = () => {
             Join Us Today
           </h1>
           <button className="hover:bg-primary-700 transition-all duration-700 px-10 sm:px-20 py-3 mb-10 sm:mb-0 sm:py-5 bg-red-300 rounded-lg text-white mt-5">
-            Enroll Now
+            <Link to="https://wa.me/2349032565436"> Enroll Now</Link>
           </button>
         </div>
         <div className="bg-primary-700 -mb-14  sm:mb-0 py-7 text-center w-full">

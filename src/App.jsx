@@ -4,11 +4,13 @@ import { TransitionProvider } from "./context/TransitionContext";
 import TransitionComponent from "./components/Transition";
 import HomePage from "./pages/HomePage";
 import Header from "./components/Header";
+import { useMediaQuery } from "@mui/material";
 
 function App() {
+  const match = useMediaQuery("(max-width:640px)");
   return (
     <>
-      <Header />
+      <Header match={match} />
       <TransitionProvider>
         <Routes>
           <Route

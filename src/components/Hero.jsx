@@ -5,6 +5,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 export const Hero = () => {
@@ -76,7 +77,7 @@ export const Hero = () => {
           </p>
           <div className="flex gap-3 mt-5 justify-center sm:justify-start">
             <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-700 text-white">
-              Join Us Now
+              <Link to="https://wa.me/2349032565436"> Join Us Now</Link>
             </button>
             <button className="border py-3 px-2 text-sm sm:text-base sm:px-5 rounded-lg shadow bg-primary-200 text-">
               Download Our Brochure
