@@ -14,54 +14,63 @@ export const Courses = ({ match }) => {
       title: "Front End (Basics)",
       duration: "3 months",
       price: 150,
+      imageUrl: "/fe-basic.jpg",
     },
     {
       id: 2,
       title: "Front End (Advanced)",
       duration: "6 months",
       price: 250,
+      imageUrl: "/fe-advanced.jpg",
     },
     {
       id: 3,
       title: "Back End Development",
       duration: "6 months",
       price: 250,
+      imageUrl: "/backend.PNG",
     },
     {
       id: 4,
       title: "Full Stack Development",
       duration: "1 year",
       price: 450,
+      imageUrl: "/full-stack.jpg",
     },
     {
       id: 5,
       title: " App Development",
       duration: "6 months",
       price: 250,
+      imageUrl: "/fe-basic.jpg",
     },
     {
       id: 6,
       title: "Data Analyst",
       duration: "3 months",
       price: 150,
+      imageUrl: "/data-analysis.png",
     },
     {
       id: 7,
       title: "Data Science",
       duration: "6 months",
       price: 250,
+      imageUrl: "/data-sci.webp",
     },
     {
       id: 8,
       title: "Cyber Security",
       duration: "6 months",
       price: 250,
+      imageUrl: "/cyber.PNG",
     },
     {
       id: 9,
       title: "Product Design(UI/UX)",
       duration: "3 months",
       price: 150,
+      imageUrl: "/uiux.jpg",
     },
   ];
 
@@ -217,7 +226,7 @@ export const Courses = ({ match }) => {
                 {item.title}
               </h3>
               <div className="h-[100px] mb-3 border overflow-hidden w-full">
-                <img src="/img-1.jpg" alt="img" className="w-full h-full" />
+                <img src={item.imageUrl} alt="img" className="w-full h-full" />
               </div>
               <div className="flex items-center gap-3 mb-2">
                 <span className="py-1 px-3 text-sm font-semibold bg-primary-200">
