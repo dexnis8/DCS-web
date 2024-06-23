@@ -226,7 +226,7 @@ export const Courses = ({ match }) => {
               <h3 className="text-black text-base font-semibold mb-3">
                 {item.title}
               </h3>
-              <div className="h-[100px] mb-3 border overflow-hidden w-full">
+              <div className="h sm:h-[100px] mb-3 border overflow-hidden w-full">
                 <img src={item.imageUrl} alt="img" className="w-full h-full" />
               </div>
               <div className="flex items-center gap-3 mb-2">
