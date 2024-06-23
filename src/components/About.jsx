@@ -151,7 +151,28 @@ export const About = ({ match }) => {
           // className={`about-img w-full rounded-lg h[600px] bg-red-300`}
         >
           <img src="/about.jpg" alt="about us" className="" />
-          {/* <div className="absolute w-full inset-0 h-[500px] bg-red-300 translate-z-10 left-[-300px]"></div> */}
+          <div className="absolute py-5 px-3 w-[100px] h-fit bg-primary-800 text-center  top-0 rounded-ful ">
+            {" "}
+            <h2 className="text-sm font-bold text-white">
+              Tested{" "}
+              {/* <svg
+                width="15"
+                height="15"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="12" cy="12" r="12" fill="#4CAF50" />
+                <path
+                  d="M10 14.5L7.5 12L6.5 13L10 16.5L18 8.5L17 7.5L10 14.5Z"
+                  fill="white"
+                />
+              </svg> */}
+            </h2>
+            <h2 className="text-sm font-bold text-white">Approved </h2>
+            <h2 className="text-sm font-bold text-white text-center">&</h2>
+            <h2 className="text-sm font-bold text-white">Trusted</h2>
+          </div>
         </div>
         <div className="about-txt text-center sm:text-left flex flex-col gap-10">
           <h1
