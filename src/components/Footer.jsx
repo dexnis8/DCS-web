@@ -20,6 +20,9 @@ export const Footer = () => {
         </div>
         <div className="bg-primary-700 -mb-14  sm:mb-0 py-7 text-center w-full">
           <h1 className="text-white font-bold text-2xl">Delux Coding School</h1>
+          <p className="flex text-white  mt-5 font-medium justify-center items-center">
+            Built and maintained with ❤️ by students.
+          </p>
         </div>
       </div>
     </>
