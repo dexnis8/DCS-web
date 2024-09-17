@@ -62,7 +62,7 @@ I did my data analysis training at Delux Coding School. It's excellent instituti
       </div>
       <div
         title="Slide Paused"
-        className="flex cursor-pointer w-full py-12 col-span-3 overflow-hidden flex-col gap-2 justify-center items-center"
+        className="flex cursor-pointer w-full md:w-[90%] mx-auto py-12 col-span-3 overflow-hidden flex-col gap-2 justify-center items-center"
       >
         {/* I added so many props so I'll remember they exist whenever I want to use this carousel. Below is the link to the docs */}
         {/* http://react-responsive-carousel.js.org/storybook/index.html?path=/story/01-basic--base */}
@@ -92,7 +92,7 @@ I did my data analysis training at Delux Coding School. It's excellent instituti
                 {testimonial.stack}
               </span>
               {/* <div className="ratings"></div> */}
-              <p className="mt-4 w-[35%]  sm:w-[75%] text-grey-200 mx-auto text-center font-Poppins">
+              <p className="mt-4 w-[35%] break-words sm:w-[60%] text-grey-200 mx-auto text-center font-Poppins">
                 {testimonial.text}
               </p>
             </div>
